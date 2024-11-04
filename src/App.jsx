@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { setData, setLoading, setError } from "./store/data";
-import { shuffleArray } from "./helpers/shuffleArray";
 import QuizCard from './components/quizcard'
 
 
@@ -20,9 +19,7 @@ const fetchData = async (dispatch) => {
     );
 
     const results = await Promise.all(promises);
-
-    const shuffledResults = shuffleArray(results);
-    dispatch(setData(shuffledResults));
+    dispatch(setData(results));
   } catch (error) {
     dispatch(setError(error.toString()));
   } finally {
