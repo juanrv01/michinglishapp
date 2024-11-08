@@ -1,19 +1,19 @@
-import { useEffect } from "react";
-import { useDispatch } from "react-redux";
-import { setData, setLoading, setError } from "./store/data";
-import QuizCard from './components/quizcard'
+import React, { useEffect, useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { setData, setLoading, setError } from './store/data';
+import QuizCard from './components/quizcard';
+import AppNavbar from './components/Navbar/AppNavbar';
+import Sidebar from './components/Sidebar/Sidebar';
+
 
 
 const fetchData = async (dispatch) => {
   try {
     dispatch(setLoading(true));
-
-
     const indexResponse = await fetch(`${import.meta.env.BASE_URL}data/index.json`);
     const indexData = await indexResponse.json();
-    const { folders } = indexData; 
+    const { folders } = indexData;
 
- 
     const promises = folders.map(folder =>
       fetch(`${import.meta.env.BASE_URL}data/${folder}/info.json`).then(res => res.json())
     );
@@ -28,20 +28,25 @@ const fetchData = async (dispatch) => {
 };
 
 function App() {
-
   const dispatch = useDispatch();
+  const [showSidebar, setShowSidebar] = useState(false);
 
   useEffect(() => {
     fetchData(dispatch);
   }, [dispatch]);
 
+  const toggleSidebar = () => setShowSidebar(!showSidebar);
 
   return (
-    <div className="mt-5">
-      
-      <QuizCard/>
+    <>
+      <AppNavbar onToggleSidebar={toggleSidebar} />
+      <Sidebar show={showSidebar} onClose={toggleSidebar} />
+      <div className="mt-5">
+        <QuizCard />
       </div>
-  )
+    </>
+  );
 }
 
-export default App
+export default App;
+
