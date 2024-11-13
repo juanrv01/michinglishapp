@@ -1,6 +1,8 @@
 // src/components/Navbar.js
 import React from 'react';
 import { Navbar, Nav, NavDropdown, Container, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+
 
 const AppNavbar = ({ onToggleSidebar }) => {
   return (
@@ -9,14 +11,11 @@ const AppNavbar = ({ onToggleSidebar }) => {
         <Button variant="light" onClick={onToggleSidebar} className="me-2 sidebar-toggle">
           ☰
         </Button>
-        <Navbar.Brand href="/">MichinglishAPP</Navbar.Brand>
+        <Navbar.Brand as={Link} to="/michinglishapp">MichinglishAPP</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#study">Study</Nav.Link>
-            <Nav.Link href="#live-classes">Live Classes</Nav.Link>
-            <Nav.Link href="#help">Help</Nav.Link>
+            <Nav.Link as={Link} to="/michinglishapp/testknowledge" >Check Your Knowledge</Nav.Link>
           </Nav>
           <Nav>
             <NavDropdown title="My Profile" id="basic-nav-dropdown" align="end">
