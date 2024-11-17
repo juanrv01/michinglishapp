@@ -11,11 +11,11 @@ export default defineConfig({
       registerType: 'autoUpdate',
       base: '/michinglishapp/',
       workbox: {
-      globPatterns: ['**/*.{js,css,html,png,svg,json}'], // Asegúrate de incluir los archivos JSON
+      globPatterns: ['**/*.{js,css,html,png,svg,json}'],
       runtimeCaching: [
         {
           urlPattern: /\/data\/.*\.json$/, // Expresión regular para caché de archivos JSON
-          handler: 'CacheFirst', // O usa 'NetworkFirst' si prefieres actualizar el caché dinámicamente
+          handler: 'CacheFirst', // O usa 'NetworkFirst'
           options: {
             cacheName: 'data-cache',
             expiration: {
@@ -35,25 +35,25 @@ export default defineConfig({
         theme_color: '#000000',
         icons: [
           {
-            "src": "/pwa-192x192.png",
+            "src": "./pwa-192x192.png",
             "sizes": "192x192",
             "type": "image/png",
             "purpose": "any"
           },
           {
-            "src": "/pwa-512x512.png",
+            "src": "./pwa-512x512.png",
             "sizes": "512x512",
             "type": "image/png",
             "purpose": "any"
           },
           {
-            "src": "/pwa-maskable-192x192.png",
+            "src": "./pwa-maskable-192x192.png",
             "sizes": "192x192",
             "type": "image/png",
             "purpose": "maskable"
           },
           {
-            "src": "/pwa-maskable-512x512.png",
+            "src": "./pwa-maskable-512x512.png",
             "sizes": "512x512",
             "type": "image/png",
             "purpose": "maskable"
