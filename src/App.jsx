@@ -1,15 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { setData, setLoading, setError } from './store/data';
-import QuizCard from './components/quizcard';
 import AppNavbar from './components/Navbar/AppNavbar';
 import Sidebar from './components/Sidebar/Sidebar';
-import ModuleCard from './components/modules/ModuleCard';
-import { FaUserFriends } from 'react-icons/fa';
-import VocabularyModule from './components/modules/VocabularyModule';
-import GrammarModule from './components/modules/GrammarModule';
 import { AppRouter } from './router/AppRouter';
-
 
 
 
