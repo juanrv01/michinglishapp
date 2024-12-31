@@ -1,12 +1,12 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
 
-const VocabularyModule = () => {
+const AdjectivesModule = () => {
   return (
     <Card style={{ width: '18rem', margin: '1rem' }}>
-       VocabularyModule
+       AdjectivesModule
     </Card>
   );
 };
 
-export default VocabularyModule;
+export default AdjectivesModule;
