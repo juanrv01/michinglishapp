@@ -57,6 +57,26 @@
             "therefore"
           ],
           "answer": "nevertheless"
+        },
+        {
+          "question": "She loves painting; _____, her sister enjoys sculpting.",
+          "options": [
+            "likewise",
+            "because",
+            "though",
+            "nevertheless"
+          ],
+          "answer": "likewise"
+        },
+        {
+          "question": "He studied hard, _____ he didn’t pass the exam.",
+          "options": [
+            "likewise",
+            "therefore",
+            "though",
+            "as a result"
+          ],
+          "answer": "though"
         }
       ]
     }
