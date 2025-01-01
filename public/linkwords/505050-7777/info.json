@@ -1,0 +1,254 @@
+{
+  "user": {
+    "username": "Falcao",
+    "profileImage": "https://www.marcasportrevistailustrada.com/marcasport/images/falcao-3.gif",
+    "socialLink": "@falcao"
+  },
+  "topics": [
+    {
+      "topic": "linkwords",
+      "questions": [
+            {
+              "question": "He is very talented; _____, he is also extremely humble.",
+              "options": [
+                "Nonetheless",
+                "Whereas",
+                "Furthermore",
+                "In case"
+              ],
+              "answer": "Furthermore"
+            },
+            {
+              "question": "She loves traveling. _____, she has visited over 30 countries.",
+              "options": [
+                "Conversely",
+                "What’s more",
+                "Owing to",
+                "In addition"
+              ],
+              "answer": "What’s more"
+            },
+            {
+              "question": "_____ does he enjoy reading, _____ he also writes poetry.",
+              "options": [
+                "Nonetheless ... even so",
+                "Thus ... hence",
+                "Not only ... but also",
+                "In case ... whereas"
+              ],
+              "answer": "Not only ... but also"
+            },
+            {
+              "question": "He excels in math. _____, he has won several national competitions.",
+              "options": [
+                "In addition",
+                "All in all",
+                "Provided that",
+                "Whereas"
+              ],
+              "answer": "In addition"
+            },
+            {
+              "question": "Many believed the plan would fail. _____, it turned out to be a great success.",
+              "options": [
+                "Likewise",
+                "On the contrary",
+                "Such as",
+                "As a result"
+              ],
+              "answer": "On the contrary"
+            },
+            {
+              "question": "Some people prefer coffee; _____, others enjoy tea.",
+              "options": [
+                "Owing to",
+                "Thus",
+                "Provided that",
+                "Conversely"
+              ],
+              "answer": "Conversely"
+            },
+            {
+              "question": "He is hardworking. _____, he is not always punctual.",
+              "options": [
+                "Nonetheless",
+                "Hence",
+                "On the other hand",
+                "Whereas"
+              ],
+              "answer": "On the other hand"
+            },
+            {
+              "question": "_____ she enjoys painting, he prefers sculpting.",
+              "options": [
+                "Thus",
+                "Whereas",
+                "All in all",
+                "In addition"
+              ],
+              "answer": "Whereas"
+            },
+            {
+              "question": "She was tired; _____, she continued working until late.",
+              "options": [
+                "Equally",
+                "Nonetheless",
+                "As a consequence",
+                "Supposing that"
+              ],
+              "answer": "Nonetheless"
+            },
+            {
+              "question": "It was raining heavily; _____, they decided to go hiking.",
+              "options": [
+                "Even so",
+                "Not only ... but also",
+                "In case",
+                "As long as"
+              ],
+              "answer": "Even so"
+            },
+            {
+              "question": "He worked hard; _____, he achieved his goals.",
+              "options": [
+                "Thus",
+                "What’s more",
+                "While",
+                "Equally"
+              ],
+              "answer": "Thus"
+            },
+            {
+              "question": "The company expanded rapidly; _____, its profits increased significantly.",
+              "options": [
+                "Whereas",
+                "In addition",
+                "Provided that",
+                "Hence"
+              ],
+              "answer": "Hence"
+            },
+            {
+              "question": "He missed the deadline. _____, he faced criticism from his boss.",
+              "options": [
+                "On the other hand",
+                "As a consequence",
+                "Likewise",
+                "Nonetheless"
+              ],
+              "answer": "As a consequence"
+            },
+            {
+              "question": "She forgot her umbrella. _____, she got wet in the rain.",
+              "options": [
+                "Even so",
+                "While",
+                "Such as",
+                "As a result"
+              ],
+              "answer": "As a result"
+            },
+            {
+              "question": "The project was delayed _____ a lack of resources.",
+              "options": [
+                "Unless",
+                "Conversely",
+                "Owing to",
+                "Provided that"
+              ],
+              "answer": "Owing to"
+            },
+            {
+              "question": "You cannot enter the building _____ you have a valid ID card.",
+              "options": [
+                "In addition",
+                "Likewise",
+                "As a consequence",
+                "Unless"
+              ],
+              "answer": "Unless"
+            },
+            {
+              "question": "_____ the weather improves, we will cancel the picnic.",
+              "options": [
+                "Equally",
+                "Provided that",
+                "Nonetheless",
+                "Whereas"
+              ],
+              "answer": "Provided that"
+            },
+            {
+              "question": "I will lend you the book _____ you promise to return it.",
+              "options": [
+                "Even so",
+                "As long as",
+                "All in all",
+                "Thus"
+              ],
+              "answer": "As long as"
+            },
+            {
+              "question": "Bring an umbrella _____ it rains.",
+              "options": [
+                "In case",
+                "On the contrary",
+                "Therefore",
+                "What’s more"
+              ],
+              "answer": "In case"
+            },
+            {
+              "question": "_____ he agreed to help, we wouldn’t have finished on time.",
+              "options": [
+                "Conversely",
+                "Owing to",
+                "Nonetheless",
+                "Supposing that"
+              ],
+              "answer": "Supposing that"
+            },
+            {
+              "question": "Cities _____ New York and Tokyo are known for their vibrant cultures.",
+              "options": [
+                "Hence",
+                "Such as",
+                "Even so",
+                "Whereas"
+              ],
+              "answer": "Such as"
+            },
+            {
+              "question": "She worked hard; _____, he managed to complete the project.",
+              "options": [
+                "Likewise",
+                "Whereas",
+                "Nonetheless",
+                "As a result"
+              ],
+              "answer": "Likewise"
+            },
+            {
+              "question": "Both methods are effective. _____, they have their limitations.",
+              "options": [
+                "Equally",
+                "Provided that",
+                "Thus",
+                "Hence"
+              ],
+              "answer": "Equally"
+            },
+            {
+              "question": "_____, the meeting was productive despite the challenges.",
+              "options": [
+                "While",
+                "In addition",
+                "All in all",
+                "On the other hand"
+              ],
+              "answer": "All in all"
+            }        
+         ]
+    }
+  ]
+}
