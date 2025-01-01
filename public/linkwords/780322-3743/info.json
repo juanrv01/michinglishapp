@@ -1,0 +1,66 @@
+{
+  "user": {
+    "username": "Sofia Vergara",
+    "profileImage": "https://i.pinimg.com/474x/5f/07/90/5f0790ab7db97f8170857270d0ecfd30.jpg",
+    "socialLink": "@sofiavergara"
+  },
+  "topics": [
+    {
+      "topic": "linkwords",
+      "questions": [
+        {
+          "question": "She was very tired, _____ she finished her assignment on time.",
+          "options": [
+            "however",
+            "because",
+            "although",
+            "therefore"
+          ],
+          "answer": "however"
+        },
+        {
+          "question": "The weather was terrible, _____ we decided to stay home.",
+          "options": [
+            "because",
+            "so",
+            "however",
+            "despite"
+          ],
+          "answer": "so"
+        },
+        {
+          "question": "I missed the bus, _____ I was late for work.",
+          "options": [
+            "although",
+            "therefore",
+            "despite",
+            "however"
+          ],
+          "answer": "therefore"
+        },
+        {
+          "question": "_____ the fact that he was ill, he went to work.",
+          "options": [
+            "Despite",
+            "Although",
+            "However",
+            "Because"
+          ],
+          "answer": "Despite"
+        },
+        {
+          "question": "He studied hard, _____ he failed the exam.",
+          "options": [
+            "nevertheless",
+            "so",
+            "because",
+            "therefore"
+          ],
+          "answer": "nevertheless"
+        }
+      ]
+    }
+  ]
+}
+
+  

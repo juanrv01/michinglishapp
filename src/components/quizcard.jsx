@@ -1,32 +1,12 @@
 
 import React, { useState, useEffect } from 'react';
-import { useSelector } from 'react-redux';
-import { Card, Button, Image, Row, Col, Container } from 'react-bootstrap';
-import { shuffleArray } from "../helpers/shuffleArray";
+import { Card, Button, Image, Row, Col, Container, Spinner  } from 'react-bootstrap';
 
-function extractQuestionsWithUserData(data) {
-  const allQuestions = [];
-  data.forEach((userData) => {
-    const { user, topics } = userData;
-    topics.forEach((topic) => {
-      const { questions } = topic;
-      questions.forEach((question) => {
-        allQuestions.push({
-          ...question,
-          profileImage: user.profileImage,
-          socialLink: user.socialLink,
-          username: user.username
-        });
-      });
-    });
-  });
-  return allQuestions;
-}
 
-const QuizCard = () => {
-  const data = useSelector((state) => state.data.data);
 
-  const [finalData, setFinalData] = useState([]);
+
+const QuizCard = ({tittle, allQuestions}) => {
+  
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
   const [timeLeft, setTimeLeft] = useState(120);
@@ -35,11 +15,12 @@ const QuizCard = () => {
   const [selectedOption, setSelectedOption] = useState(null);
   const [isCorrect, setIsCorrect] = useState(null);
 
-  const allQuestions = extractQuestionsWithUserData(finalData);
+
+
 
   // Shuffle questions each time the quiz is started
   const startQuiz = () => {
-    setFinalData(shuffleArray([...data])); // Shuffle questions
+   
     setHasStarted(true);
     setCurrentQuestion(0);
     setScore(0);
@@ -89,8 +70,14 @@ const QuizCard = () => {
     startQuiz(); // Reinitialize quiz with shuffled questions
   };
 
-  if (!data || data.length === 0) {
-    return <div>Loading...</div>;
+  if (!allQuestions || allQuestions.length === 0) {
+    return (
+      <div className="d-flex justify-content-center align-items-center" style={{ height: '100vh' }}>
+      <Spinner animation="border" role="status">
+        <span className="visually-hidden">Loading...</span>
+      </Spinner>
+    </div>
+    );
   }
 
   return (
@@ -98,7 +85,7 @@ const QuizCard = () => {
       {!hasStarted ? (
         <Card className="mb-4 shadow-sm text-center" style={{ maxWidth: '800px' }}>
           <Card.Body>
-            <h2>Welcome to the Quiz!</h2>
+            <h2>Welcome to {tittle} the Quiz!</h2>
             <Button variant="primary" onClick={startQuiz}>Start</Button>
           </Card.Body>
         </Card>

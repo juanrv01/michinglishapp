@@ -1,0 +1,163 @@
+{
+  "user": {
+    "username": "Fredy Ball",
+    "profileImage": "https://static.wikia.nocookie.net/multiversus/images/a/ac/Superman_Portrait_Full.png",
+    "socialLink": "@fredyunivalle"
+  },
+  "topics": [
+    {
+      "topic": "linkwords",
+      "questions": [
+        {
+          "question": "Choose the correct sentence",
+          "options": [
+            "She was tired; however, she kept working.",
+            "She was tired; therefore, she kept working.",
+            "She was tired; despite, she kept working.",
+            "She was tired; although, she kept working."
+          ],
+          "answer": "She was tired; however, she kept working."
+        },
+        {
+          "question": "Choose the correct sentence",
+          "options": [
+            "He studied hard; moreover, he failed the test.",
+            "He studied hard; as a result, he failed the test.",
+            "He studied hard; therefore, he passed the test.",
+            "He studied hard; even though, he passed the test."
+          ],
+          "answer": "He studied hard; therefore, he passed the test."
+        },
+        {
+          "question": "Choose the correct sentence",
+          "options": [
+            "The weather was bad; nevertheless, we went hiking.",
+            "The weather was bad; therefore, we went hiking.",
+            "The weather was bad; moreover, we went hiking.",
+            "The weather was bad; even though, we went hiking."
+          ],
+          "answer": "The weather was bad; nevertheless, we went hiking."
+        },
+        {
+          "question": "Choose the correct sentence",
+          "options": [
+            "She loves traveling; as a result, she hates flying.",
+            "She loves traveling; even though, she hates flying.",
+            "She loves traveling; however, she hates flying.",
+            "She loves traveling; despite, she hates flying."
+          ],
+          "answer": "She loves traveling; however, she hates flying."
+        },
+        {
+          "question": "Choose the correct sentence",
+          "options": [
+            "Although he is young, he is very experienced.",
+            "Even though he is young; he is very experienced.",
+            "Despite he is young, he is very experienced.",
+            "He is young; as a result, he is very experienced."
+          ],
+          "answer": "Although he is young, he is very experienced."
+        },{
+          "question": "He arrived late, _____ the meeting had already started.",
+          "options": [
+            "by contrast",
+            "since",
+            "when",
+            "as a result"
+          ],
+          "answer": "as a result"
+        },
+        {
+          "question": "She practiced every day, _____ she improved her skills quickly.",
+          "options": [
+            "so",
+            "even though",
+            "on the other hand",
+            "unless"
+          ],
+          "answer": "so"
+        },
+        {
+          "question": "The train was delayed, _____ we had to wait for an hour.",
+          "options": [
+            "while",
+            "because",
+            "therefore",
+            "on the contrary"
+          ],
+          "answer": "therefore"
+        },
+        {
+          "question": "He didn’t understand the instructions, _____ he completed the task incorrectly.",
+          "options": [
+            "nevertheless",
+            "hence",
+            "despite",
+            "even though"
+          ],
+          "answer": "hence"
+        },
+        {
+          "question": "She loves to read novels, _____ she dislikes science fiction.",
+          "options": [
+            "although",
+            "in contrast",
+            "thus",
+            "besides"
+          ],
+          "answer": "although"
+        },
+        {
+          "question": "He works very hard, _____ he is not satisfied with his achievements.",
+          "options": [
+            "but",
+            "since",
+            "for example",
+            "therefore"
+          ],
+          "answer": "but"
+        },
+        {
+          "question": "The event was canceled, _____ the heavy rain.",
+          "options": [
+            "due to",
+            "so",
+            "because of",
+            "in spite of"
+          ],
+          "answer": "because of"
+        },
+        {
+          "question": "The exam was difficult; _____, everyone passed.",
+          "options": [
+            "however",
+            "on the contrary",
+            "besides",
+            "so that"
+          ],
+          "answer": "however"
+        },
+        {
+          "question": "I will go to the party, _____ I finish my homework first.",
+          "options": [
+            "provided that",
+            "while",
+            "in case",
+            "despite"
+          ],
+          "answer": "provided that"
+        },
+        {
+          "question": "She stayed up late to study, _____ she was very tired the next day.",
+          "options": [
+            "as a result",
+            "even though",
+            "whereas",
+            "yet"
+          ],
+          "answer": "as a result"
+        }
+      ]
+    }
+  ]
+}
