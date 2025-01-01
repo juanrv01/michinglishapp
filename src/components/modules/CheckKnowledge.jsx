@@ -4,14 +4,16 @@ import QuizCard from '../quizcard';
 import { extractQuestionsWithUserData } from '../../helpers/extractQuestionWiUsrData';
 import { shuffleArray } from '../../helpers/shuffleArray';
 
-const LinkingWordsModule = () => {
-  const data = useSelector((state) => state.linkwords.data);
-  const tittle = "Linking Words"
+const CheckKnowledge = () => {
+  const data = useSelector((state) => state.data.data);
+  const tittle = "Check Your Knowledege"
   let allQuestions = extractQuestionsWithUserData(data)
   allQuestions =shuffleArray(allQuestions)
+
   return (
-   <QuizCard allQuestions={allQuestions} tittle={tittle} />
+    
+    <QuizCard allQuestions={allQuestions} tittle={tittle} />
   );
 };
 
-export default LinkingWordsModule;
+export default CheckKnowledge;
