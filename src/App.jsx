@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { setData as setDataData, setLoading as setLoadingData, setError as setErrorData } from './store/data';
 import { setData as setDataLinkwords, setLoading as setLoadingLinkwords, setError as setErrorLinkwords } from "./store/linkwords";
+import { setData as setDataVerbs, setLoading as setLoadingVerbs, setError as setErrorVerbs } from "./store/verbs";
 import AppNavbar from './components/Navbar/AppNavbar';
 import Sidebar from './components/Sidebar/Sidebar';
 import { fetchDataHelper } from "./helpers/fetchDataHelper";
@@ -29,6 +30,15 @@ function App() {
       setDataLinkwords,
       setErrorLinkwords,
       `${import.meta.env.BASE_URL}linkwords`
+    );
+
+    // Fetch for `Verbs`
+    fetchDataHelper(
+      dispatch,
+      setLoadingVerbs,
+      setDataVerbs,
+      setErrorVerbs,
+      `${import.meta.env.BASE_URL}verbs`
     );
   }, [dispatch]);
 
