@@ -1,61 +1,54 @@
 const fs = require('fs');
 const path = require('path');
 
-// Path to the 'data' folder where the JSON files are located
-const dataDirectory = path.resolve(__dirname, '..', '..', 'public', 'data');
-
-// Function to validate that the number of options is correct
+// Validate that a question has exactly 4 options
 function validateQuestionOptions(question) {
-  expect(Array.isArray(question.options)).toBe(true);  // Ensure options is an array
-  expect(question.options.length).toBe(4);  // Ensure there are exactly 4 options
+  expect(Array.isArray(question.options)).toBe(true);
+  expect(question.options.length).toBe(4);
 }
 
-// Function to validate that the correct answer is one of the options
+// Validate that the answer is one of the options
 function validateAnswerInOptions(question) {
-  expect(question.options).toContain(question.answer);  // Ensure the answer is in the options
+  expect(question.options).toContain(question.answer);
 }
 
-// Function to extract all questions from the JSON file
+// Extract all question objects from the JSON
 function extractAllQuestions(jsonData) {
   const questions = [];
-
   jsonData.topics.forEach(topic => {
     topic.questions.forEach(question => {
-      questions.push(question);  // Push the entire question object
+      questions.push(question);
     });
   });
-
   return questions;
 }
 
-// Read the `index.json` file
-const indexFilePath = path.join(dataDirectory, 'index.json');
-const indexFileContent = fs.readFileSync(indexFilePath);
-const indexJson = JSON.parse(indexFileContent);
+// Run validations for a folder like "data", "linkwords", "verbs"
+function validateFolderQuestions(folderName) {
+  const baseDir = path.resolve(__dirname, '..', '..', 'public', folderName);
+  const indexFilePath = path.join(baseDir, 'index.json');
+  const indexJson = JSON.parse(fs.readFileSync(indexFilePath));
+  const subfolders = indexJson.folders;
 
-// Jest unit tests
-describe('Validate questions options and answers', () => {
-  
-  // Get all subfolders inside the 'data' folder
-  const subfolders = fs.readdirSync(dataDirectory).filter(folder => {
-    return fs.lstatSync(path.join(dataDirectory, folder)).isDirectory();
-  });
+  describe(`Validate options and answers in folder: ${folderName}`, () => {
+    subfolders.forEach(subfolder => {
+      const jsonFilePath = path.join(baseDir, subfolder, 'info.json');
 
-  subfolders.forEach(subfolder => {
-    const jsonFilePath = path.join(dataDirectory, subfolder, 'info.json');
+      test(`Check options and answers in ${subfolder}`, () => {
+        const rawData = fs.readFileSync(jsonFilePath);
+        const jsonData = JSON.parse(rawData);
+        const questions = extractAllQuestions(jsonData);
 
-    test(`should validate questions in subfolder ${subfolder} for correct options and answers`, () => {
-      const rawData = fs.readFileSync(jsonFilePath);
-      const jsonData = JSON.parse(rawData);
-
-      // Extract questions from the JSON file
-      const questions = extractAllQuestions(jsonData);
-
-      // Validate each question
-      questions.forEach(question => {
-        validateQuestionOptions(question);  // Ensure there are exactly 4 options
-        validateAnswerInOptions(question);  // Ensure the correct answer is among the options
+        questions.forEach(question => {
+          validateQuestionOptions(question);
+          validateAnswerInOptions(question);
+        });
       });
     });
   });
-});
+}
+
+// Run validations for all three folders
+validateFolderQuestions('data');
+validateFolderQuestions('linkwords');
+validateFolderQuestions('verbs');
