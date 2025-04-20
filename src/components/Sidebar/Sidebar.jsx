@@ -70,7 +70,85 @@ const Sidebar = ({ show, onClose }) => {
             >
               Adverbs
             </Link>
+
           </ListGroup.Item>
+                  {/* Item: modals-of-possibility */}
+                  <ListGroup.Item>
+            <Link 
+              to="/michinglishapp/modals-of-possibility" 
+              onClick={onClose} 
+              className="text-decoration-none"
+            >
+              Modals of possibility
+            </Link>
+            
+            </ListGroup.Item>
+                  {/* Item: modals-of-deduction */}
+                  <ListGroup.Item>
+            <Link 
+              to="/michinglishapp/modals-of-deduction" 
+              onClick={onClose} 
+              className="text-decoration-none"
+            >
+              Modals of deduction
+            </Link>
+
+            </ListGroup.Item>
+                  {/* Item: zero_conditionals */}
+                  <ListGroup.Item>
+            <Link 
+              to="/michinglishapp/zero-conditionals" 
+              onClick={onClose} 
+              className="text-decoration-none"
+            >
+              Zero conditionals
+            </Link>
+
+            </ListGroup.Item>
+                  {/* Item: first_conditionals */}
+                  <ListGroup.Item>
+            <Link 
+              to="/michinglishapp/first-conditionals" 
+              onClick={onClose} 
+              className="text-decoration-none"
+            >
+              First conditionals
+            </Link>
+
+            </ListGroup.Item>
+                  {/* Item: second_conditionals */}
+                  <ListGroup.Item>
+            <Link 
+              to="/michinglishapp/second-conditionals" 
+              onClick={onClose} 
+              className="text-decoration-none"
+            >
+              Second conditionals
+            </Link>
+
+            </ListGroup.Item>
+                  {/* Item: third_conditionals */}
+                  <ListGroup.Item>
+            <Link 
+              to="/michinglishapp/third-conditionals" 
+              onClick={onClose} 
+              className="text-decoration-none"
+            >
+              Third conditionals
+            </Link>
+
+            </ListGroup.Item>
+                  {/* Item: mixed_conditionals */}
+                  <ListGroup.Item>
+            <Link 
+              to="/michinglishapp/mixed_conditionals" 
+              onClick={onClose} 
+              className="text-decoration-none"
+            >
+              Mixed conditionals
+            </Link>
+
+          </ListGroup.Item>  
         </ListGroup>
       </Offcanvas.Body>
     </Offcanvas>

@@ -4,9 +4,9 @@ import QuizCard from '../quizcard';
 import { extractQuestionsWithUserData } from '../../helpers/extractQuestionWiUsrData';
 import { shuffleArray } from '../../helpers/shuffleArray';
 
-const AdjectivesModule = () => {
+const MixedConditionalModule = () => {
   const data = useSelector((state) => state.linkwords.data);
-  const tittle = "Adjectives"
+  const tittle = "Mixed Conditional"
   let allQuestions = extractQuestionsWithUserData(data)
   allQuestions =shuffleArray(allQuestions)
   return (
@@ -14,4 +14,4 @@ const AdjectivesModule = () => {
   );
 };
 
-export default AdjectivesModule;
+export default MixedConditionalModule;
