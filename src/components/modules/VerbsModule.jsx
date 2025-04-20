@@ -1,11 +1,16 @@
 import React from 'react';
-import { Card } from 'react-bootstrap';
+import { useSelector } from 'react-redux';
+import QuizCard from '../quizcard';
+import { extractQuestionsWithUserData } from '../../helpers/extractQuestionWiUsrData';
+import { shuffleArray } from '../../helpers/shuffleArray';
 
 const VerbsModule = () => {
+  const data = useSelector((state) => state.linkwords.data);
+  const tittle = "Verbs"
+  let allQuestions = extractQuestionsWithUserData(data)
+  allQuestions =shuffleArray(allQuestions)
   return (
-    <Card style={{ width: '18rem', margin: '1rem' }}>
-       VerbsModule
-    </Card>
+   <QuizCard allQuestions={allQuestions} tittle={tittle} />
   );
 };
 

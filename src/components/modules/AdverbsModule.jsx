@@ -1,12 +1,18 @@
 import React from 'react';
-import { Card } from 'react-bootstrap';
+import { useSelector } from 'react-redux';
+import QuizCard from '../quizcard';
+import { extractQuestionsWithUserData } from '../../helpers/extractQuestionWiUsrData';
+import { shuffleArray } from '../../helpers/shuffleArray';
 
 const AdverbsModule = () => {
+  const data = useSelector((state) => state.linkwords.data);
+  const tittle = "Adverbs"
+  let allQuestions = extractQuestionsWithUserData(data)
+  allQuestions =shuffleArray(allQuestions)
   return (
-    <Card style={{ width: '18rem', margin: '1rem' }}>
-       AdverbsModule
-    </Card>
+   <QuizCard allQuestions={allQuestions} tittle={tittle} />
   );
 };
 
 export default AdverbsModule;
+
