@@ -1,0 +1,114 @@
+{
+  "user": {
+    "username": "Fredy Ball",
+    "profileImage": "https://static.wikia.nocookie.net/multiversus/images/a/ac/Superman_Portrait_Full.png",
+    "socialLink": "@fredyballest"
+  },
+  "topics": [
+    {
+      "topic": "adjectives",
+      "questions": [
+        {
+          "question": "Which word is an adjective in the sentence: 'The quick brown fox jumps over the lazy dog'?",
+          "options": [
+            "jumps",
+            "quick",
+            "fox",
+            "over"
+          ],
+          "answer": "quick"
+        },
+        {
+          "question": "Choose the sentence that uses an adjective correctly:",
+          "options": [
+            "She sings beautiful.",
+            "She is beauty.",
+            "She is a beautifully girl.",
+            "She is a beautiful girl."
+          ],
+          "answer": "She is a beautiful girl."
+        },
+        {
+          "question": "Which of the following is a comparative adjective?",
+          "options": [
+            "happy",
+            "happiest",
+            "happier",
+            "happiness"
+          ],
+          "answer": "happier"
+        },
+        {
+          "question": "Identify the superlative adjective in this sentence: 'Of all the students, Maria is the smartest.'",
+          "options": [
+            "smart",
+            "smartest",
+            "student",
+            "all"
+          ],
+          "answer": "smartest"
+        },
+        {
+          "question": "Which sentence uses an adjective to describe someone's mood?",
+          "options": [
+            "She smiled happily.",
+            "She was happy.",
+            "She dances happily.",
+            "She runs quickly."
+          ],
+          "answer": "She was happy."
+        },
+        {
+          "question": "Choose the correct order of adjectives: 'She bought a _____ dress.'",
+          "options": [
+            "red small lovely",
+            "lovely red small",
+            "small lovely red",
+            "lovely small red"
+          ],
+          "answer": "lovely small red"
+        },
+        {
+          "question": "What kind of adjective is used in the sentence: 'I have three brothers.'?",
+          "options": [
+            "possessive adjective",
+            "descriptive adjective",
+            "numeral adjective",
+            "interrogative adjective"
+          ],
+          "answer": "numeral adjective"
+        },
+        {
+          "question": "Which of these is a descriptive adjective?",
+          "options": [
+            "this",
+            "happy",
+            "her",
+            "two"
+          ],
+          "answer": "happy"
+        },
+        {
+          "question": "Which adjective best completes this sentence: 'The soup is too _____ to eat.'",
+          "options": [
+            "hot",
+            "heat",
+            "heating",
+            "heated"
+          ],
+          "answer": "hot"
+        },
+        {
+          "question": "Choose the correct use of an adjective:",
+          "options": [
+            "It was a rain day.",
+            "It was a rainy day.",
+            "It was a rained day.",
+            "It was raining day."
+          ],
+          "answer": "It was a rainy day."
+        }
+      ]
+    }
+  ]
+}
