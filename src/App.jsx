@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux';
 import { setData as setDataData, setLoading as setLoadingData, setError as setErrorData } from './store/data';
 import { setData as setDataLinkwords, setLoading as setLoadingLinkwords, setError as setErrorLinkwords } from "./store/linkwords";
 import { setData as setDataVerbs, setLoading as setLoadingVerbs, setError as setErrorVerbs } from "./store/verbs";
+import { setData as setDataAdjectives, setLoading as setLoadingAdjectives, setError as setErrorAdjectives } from "./store/adjectives";
 import AppNavbar from './components/Navbar/AppNavbar';
 import Sidebar from './components/Sidebar/Sidebar';
 import { fetchDataHelper } from "./helpers/fetchDataHelper";
@@ -39,6 +40,15 @@ function App() {
       setDataVerbs,
       setErrorVerbs,
       `${import.meta.env.BASE_URL}verbs`
+    );
+
+    // Fetch for `Adjectives`
+    fetchDataHelper(
+      dispatch,
+      setLoadingAdjectives,
+      setDataAdjectives,
+      setErrorAdjectives,
+      `${import.meta.env.BASE_URL}adjectives`
     );
   }, [dispatch]);
 

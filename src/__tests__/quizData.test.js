@@ -79,7 +79,8 @@ function validateFolderCategory(baseFolderName) {
   });
 }
 
-// Run validations for all three folders
+// Run validations for all folders
 validateFolderCategory('data');
 validateFolderCategory('linkwords');
 validateFolderCategory('verbs');
+validateFolderCategory('adjectives');
