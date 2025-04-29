@@ -1,0 +1,45 @@
+{
+    "user": {
+      "username": "Victoria Volveras",
+      "profileImage": "https://static-live.nmas.com.mx/nmas-news/styles/corte_16_9/cloud-storage/2025-01/shrek-muere-perry-burro-que-inspiro-personaje.jpg?h=920929c4&itok=zqiyPIF8",
+      "socialLink": "@vickyvolveras"
+    },
+    "topics": [
+      {
+        "topic": "first conditional",
+        "questions": [
+          {
+            "question": "Choose the correct completion: 'If you _____ your homework now, you will have time to watch TV later.'",
+            "options": [
+              "finish",
+              "finishes",
+              "finished",
+              "finishing"
+            ],
+            "answer": "finish"
+          },
+          {
+            "question": "Which sentence correctly uses the first conditional?",
+            "options": [
+              "If he will get up early, he catches the train.",
+              "If he gets up early, he will catch the train.",
+              "If he getting up early, he will catch the train.",
+              "If he got up early, he catches the train."
+            ],
+            "answer": "If he gets up early, he will catch the train."
+          },
+          {
+            "question": "Complete the sentence: 'If we _____ now, we will arrive before noon.'",
+            "options": [
+              "leave",
+              "leaves",
+              "left",
+              "leaving"
+            ],
+            "answer": "leave"
+          }
+        ]
+      }
+    ]
+  }
+  
