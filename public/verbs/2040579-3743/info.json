@@ -37,6 +37,26 @@
               "had passed"
             ],
             "answer": "pass"
+          },
+          {
+            "question": "Which of the following is a correct use of 'to be' in the present tense?",
+            "options": [
+              "He are a student.",
+              "He is a student.",
+              "He am a student.",
+              "He being a student."
+            ],
+            "answer": "He is a student."
+          },
+          {
+            "question": "Choose the correct sentence in future tense:",
+            "options": [
+              "I will going to the market.",
+              "I going to the market.",
+              "I will go to the market.",
+              "I will to go to the market."
+            ],
+            "answer": "I will go to the market."
           }
         ]
       }
