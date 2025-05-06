@@ -1,0 +1,45 @@
+{
+    "user": {
+      "username": "Juan Hurtado",
+      "profileImage": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png",
+      "socialLink": "@s3basHB"
+    },
+    "topics": [
+      {
+        "topic": "verbs",
+        "questions": [
+          {
+            "question": "Identify the correct phrasal verb to complete: 'She _____ her grandmother’s kindness when telling the story.'",
+            "options": [
+              "brought up",
+              "brought in",
+              "brought down",
+              "brought out"
+            ],
+            "answer": "brought up"
+          },
+          {
+            "question": "Which sentence correctly uses the subjunctive mood?",
+            "options": [
+              "If I was you, I would apologize.",
+              "If I were you, I would apologize.",
+              "If I am you, I would apologize.",
+              "If I be you, I would apologize."
+            ],
+            "answer": "If I were you, I would apologize."
+          },
+          {
+            "question": "Choose the correct perfect infinitive structure: 'He seems _____ the secret already.'",
+            "options": [
+              "to know",
+              "to have known",
+              "to be knowing",
+              "to had known"
+            ],
+            "answer": "to have known"
+          }
+        ]
+      }
+    ]
+  }
+  
