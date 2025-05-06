@@ -4,10 +4,12 @@ import { setData as setDataData, setLoading as setLoadingData, setError as setEr
 import { setData as setDataLinkwords, setLoading as setLoadingLinkwords, setError as setErrorLinkwords } from "./store/linkwords";
 import { setData as setDataVerbs, setLoading as setLoadingVerbs, setError as setErrorVerbs } from "./store/verbs";
 import { setData as setDataAdjectives, setLoading as setLoadingAdjectives, setError as setErrorAdjectives } from "./store/adjectives";
+import { setData as setDataFirstConditional, setLoading as setLoadingFirstConditional, setError as setErrorFirstConditional } from "./store/firstconditional";
 import AppNavbar from './components/Navbar/AppNavbar';
 import Sidebar from './components/Sidebar/Sidebar';
 import { fetchDataHelper } from "./helpers/fetchDataHelper";
 import { AppRouter } from './router/AppRouter';
+
 
 
 
@@ -50,6 +52,16 @@ function App() {
       setErrorAdjectives,
       `${import.meta.env.BASE_URL}adjectives`
     );
+
+    // Fetch for `First Conditional`
+    fetchDataHelper(
+      dispatch,
+      setLoadingFirstConditional,
+      setDataFirstConditional,
+      setErrorFirstConditional,
+      `${import.meta.env.BASE_URL}firstconditional`
+    );
+    
   }, [dispatch]);
 
   const toggleSidebar = () => setShowSidebar(!showSidebar);
