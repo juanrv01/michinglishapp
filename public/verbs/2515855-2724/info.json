@@ -1,0 +1,89 @@
+{
+  "user": {
+    "username": "Andres Aristizabal",
+    "profileImage": "https://www.recetasnestle.com.ec/sites/default/files/srh_recipes/4e4293857c03d819e4ae51de1e86d66a.jpg",
+    "socialLink": "@shitty_magazine"
+  },
+  "topics": [
+    {
+      "topic": "verbs",
+      "questions": [
+        {
+          "question": "Which of the following verbs is transitive?",
+          "options": ["run", "sleep", "write", "smile"],
+          "answer": "write"
+        },
+        {
+          "question": "Identify the auxiliary verb in the following sentence: 'We had finished the project'.",
+          "options": ["we", "had", "finished", "the"],
+          "answer": "had"
+        },
+        {
+          "question": "In the phrase 'The cat is sleeping', what is the gerund form of the verb?",
+          "options": ["is", "sleeping", "the", "cat"],
+          "answer": "sleeping"
+        },
+        {
+          "question": "Which verb mood is used to express a command or order?",
+          "options": ["indicative", "subjunctive", "imperative", "infinitive"],
+          "answer": "imperative"
+        },
+        {
+          "question": "Select the sentence that contains a linking verb.",
+          "options": ["She sings very well.", "He seems tired.", "We traveled yesterday.", "You eat quickly."],
+          "answer": "He seems tired."
+        },
+        {
+          "question": "What is the infinitive form of the verb 'did'?",
+          "options": ["do", "doing", "does", "will do"],
+          "answer": "do"
+        },
+        {
+          "question": "In the sentence 'If I had time, I would travel', the verb 'would travel' is in the...",
+          "options": ["indicative", "subjunctive", "imperative", "conditional"],
+          "answer": "conditional"
+        },
+        {
+          "question": "Indicate the irregular past participle of the verb 'say'.",
+          "options": ["sayed", "said", "saying", "says"],
+          "answer": "said"
+        },
+        {
+          "question": "Which compound verb tense is used in the sentence 'They have studied a lot'?",
+          "options": ["simple present", "simple past", "simple future", "present perfect"],
+          "answer": "present perfect"
+        },
+        {
+          "question": "The verb 'to love' belongs to the...",
+          "options": ["first conjugation", "second conjugation", "third conjugation", "fourth conjugation"],
+          "answer": "first conjugation"
+        },
+        {
+          "question": "Which of the following verbs is impersonal?",
+          "options": ["walk", "rain", "read", "write"],
+          "answer": "rain"
+        },
+        {
+          "question": "Identify the simple predicate in the sentence: 'The student solved the problem quickly'.",
+          "options": ["student", "solved", "problem", "quickly"],
+          "answer": "solved"
+        },
+        {
+          "question": "What is the correct form of the verb 'to go' in the simple future tense for the third person plural?",
+          "options": ["go", "will go", "going", "went"],
+          "answer": "will go"
+        },
+        {
+          "question": "In the phrase 'It is necessary to study for the exam', the verb 'to study' functions as a(n)...",
+          "options": ["noun", "adjective", "adverb", "infinitive"],
+          "answer": "noun"
+        },
+        {
+          "question": "Which voice is used when the subject receives the action of the verb?",
+          "options": ["active voice", "passive voice", "reflexive voice", "impersonal voice"],
+          "answer": "passive voice"
+        }
+      ]
+    }
+  ]
+}
